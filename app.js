@@ -98,7 +98,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-let total6 = testArray[0]*testArray[1]*testArray[2];
+let total6 = multiply(multArr[0],multArr[1])[0];
+total6=multiply(total6,multArr[2])[0];
+
 return [total6,`The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${total6}.`];
 }
 
